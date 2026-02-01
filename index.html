@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>משחקי ט"ו בשבט - כי האדם עץ השדה</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Heebo', sans-serif; }
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .float { animation: float 3s ease-in-out infinite; }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-green-900 via-green-800 to-amber-900">
+
+  <!-- Header -->
+  <header class="text-center py-12 px-4">
+    <div class="text-8xl mb-4 float">🌳</div>
+    <h1 class="text-5xl md:text-7xl font-black text-white mb-4">כי האדם עץ השדה</h1>
+    <p class="text-2xl text-green-200">משחקים אינטראקטיביים לט"ו בשבט</p>
+    <div class="mt-4 text-amber-300 text-lg">בחרו מסלול והתחילו במסע הצמיחה!</div>
+  </header>
+
+  <!-- Games Grid -->
+  <main class="max-w-6xl mx-auto px-4 pb-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Game 1 -->
+      <a href="./masa-hailan/index.html" class="card-hover block bg-white/10 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/20">
+        <div class="h-48 bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center">
+          <span class="text-8xl">🌱</span>
+        </div>
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-white mb-2">מסע האילן</h2>
+          <p class="text-green-200 mb-4">משחק הרפתקאות עם אתגרים בכל שלב - הגנה על הנבט, גרירת זרעים ועוד</p>
+          <div class="flex items-center gap-2 text-amber-300">
+            <span>🎮</span>
+            <span class="text-sm">משחקי אקשן</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Game 2 -->
+      <a href="./ki-haadam-etz/index.html" class="card-hover block bg-white/10 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/20">
+        <div class="h-48 bg-gradient-to-br from-amber-600 to-amber-800 flex items-center justify-center">
+          <span class="text-8xl">🌿</span>
+        </div>
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-white mb-2">מסע הצמיחה</h2>
+          <p class="text-green-200 mb-4">פיצוץ בועות מחשבות, התאמת ברכות, מיון שורשים וציר זמן אינטראקטיבי</p>
+          <div class="flex items-center gap-2 text-amber-300">
+            <span>🎯</span>
+            <span class="text-sm">משחקי חשיבה</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Game 3 -->
+      <a href="./etz-hasadeh/index.html" class="card-hover block bg-white/10 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/20">
+        <div class="h-48 bg-gradient-to-br from-emerald-600 to-teal-800 flex items-center justify-center">
+          <span class="text-8xl">🌳</span>
+        </div>
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-white mb-2">עץ השדה</h2>
+          <p class="text-green-200 mb-4">מסע מודרך עם סליידרים, דירוג כוכבים ובחירה מרובה - חוויה אישית</p>
+          <div class="flex items-center gap-2 text-amber-300">
+            <span>✨</span>
+            <span class="text-sm">חוויה אישית</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 text-white/60 text-sm">
+    <p>🌸 ט"ו בשבט שמח! 🌸</p>
+    <p class="mt-2">"וְהָיָה כְּעֵץ שָׁתוּל עַל פַּלְגֵי מָיִם" - תהילים א:ג</p>
+  </footer>
+
+</body>
+</html>
